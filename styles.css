@@ -1,0 +1,315 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: url('Pictures/menu.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Zajišťuje, že tlačítka budou roztažená na celou šířku */
+    align-items: stretch; /* Vertikálně je zarovná na střed */
+    background: rgba(255, 255, 255, 0.7); /* Průhledné pozadí */
+    padding: 10px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-radius: 0;
+    height: 70px; /*vyska headeru */
+}
+
+.left-buttons {
+    font-family: 'Bokor', cursive;
+    display: flex;
+    gap: 10px; /* Mezera mezi tlačítky */
+    text-align: right;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-buttons {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    gap: 10px; /* Mezera mezi tlačítky */
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-buttons button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.left-buttons button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn {
+
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.slopes-container {
+    display: flex;
+    justify-content: stretch;
+    gap: 250px;
+    padding: 100px;
+}
+
+.slopes-blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Kontejner pro bloky */
+.blocks-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sloupce */
+    gap: 70px;
+    padding: 100px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.block {
+    font-family: "Josefin Sans", serif;
+    text-decoration: none;
+    background-color: #007BFF;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 2rem; /* Zvýší velikost textu uvnitř bloku */
+    font-weight: bold; /* Zvýrazní text */
+    text-align: center; /* Zarovná text na střed */
+    color: white; /* Barva textu */
+    justify-content: center;
+}
+
+.block img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.block span {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.block:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 127, 255, 0.6);
+}
+
+.block.black:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+}
+.block.red:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #a60009;
+
+}
+.block.blue:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #034c9b;
+}
+
+.block.blue {
+    font-family: "Josefin Sans", serif;
+    background-color: #007BFF;
+}
+
+.block.red {
+    font-family: "Josefin Sans", serif;
+    background-color: #f30e1b;
+}
+
+.block.black {
+    font-family: "Josefin Sans", serif;
+    background-color: #000000;
+}
+
+.signup-container {
+    font-family: 'Bebas Neue', cursive;
+    max-width: 700px;
+    margin: 50px auto; /* Centrum na stránce */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+.input-group input:focus {
+    outline-color: #007BFF;
+    border-color: #007BFF;
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        padding: 5px 10px;
+        height: auto;
+    }
+
+    .slopes-container,
+    .blocks-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 sloupce místo 4 */
+        gap: 10px;
+        padding: 20px;
+        margin-top: 70px;
+    }
+
+    .signup-container {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        padding: 10px 20px;
+        height: 80px;
+        z-index: 1000
+    }
+
+    .slopes-container,
+    .blocks-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
+        gap: 20px;
+        padding: 50px;
+        margin-top: 30px;
+    }
+
+    .signup-container {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        padding: 10px 40px;
+        height: 100px;
+    }
+
+    .slopes-container,
+    .blocks-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 sloupce */
+        gap: 30px;
+        padding: 70px;
+    }
+
+    .signup-container {
+        padding: 20px;
+        margin: 50px auto;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
