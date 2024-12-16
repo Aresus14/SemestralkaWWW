@@ -91,7 +91,6 @@ body {
 .slopes-container {
     display: flex;
     justify-content: stretch;
-    gap: 250px;
     padding: 100px;
 }
 
@@ -116,7 +115,7 @@ body {
     font-family: "Josefin Sans", serif;
     text-decoration: none;
     background-color: #007BFF;
-    border-radius: 8px;
+    border-radius: 50px;
     overflow: hidden;
     flex: 1;
     display: flex;
@@ -150,18 +149,18 @@ body {
 }
 
 .block.black:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #000000;
 }
 .block.red:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #a60009;
 
 }
 .block.blue:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #034c9b;
 }
@@ -197,7 +196,30 @@ body {
     margin-bottom: 20px;
 }
 
+.contacts-container {
+    font-family: 'Bebas Neue', cursive;
+    max-width: 700px;
+    margin: 50px auto; /* Centrum na stránce */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.contacts-container h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contact-row{
+    font-family: "Josefin Sans", serif;
+}
+
 .input-group {
+    font-family: "Josefin Sans", serif;
     margin-bottom: 20px;
 }
 
